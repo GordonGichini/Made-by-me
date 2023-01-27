@@ -1,14 +1,20 @@
 import React, { Component } from "react";
-import { BrowseRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; 
+import Navbar from "./components/layout/Navbar";  
+import Dashboard from './components/Dashboard/Dashboard'
+
 
 class App extends Component {
   render() {
     return ( 
-      <BrowseRouter>
+    <BrowserRouter>
       <div className="App">
-        <h1>Made by me</h1>
+        <Navbar /> 
+        <Routes>
+          <Route path='/' component={Dashboard} />
+        </Routes>
       </div>
-      </BrowseRouter>
+    </BrowserRouter>
     );
   }
 }
