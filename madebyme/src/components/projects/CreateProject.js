@@ -31,7 +31,7 @@ import { createProject } from '../../store/actions/projectAction'
             <textarea id='content' className='materialize-textarea' onChange={this.handleChange}></textarea>
         </div> 
         <div className='input-field'>
-            <button className='btn pink lighten-1 z-depth-0'>Login</button>
+            <button className='btn pink lighten-1 z-depth-0'>CREATE</button>
         </div>
       </form>        
     </div>
